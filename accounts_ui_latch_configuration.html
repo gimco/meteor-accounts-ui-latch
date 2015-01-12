@@ -1,0 +1,64 @@
+<body>
+    {{>_latchConfigureDialog}}
+</body>
+
+<template name="_latchConfigureDialog">
+  {{#if visible}}
+    <div id="configure-login-service-dialog" class="accounts-dialog accounts-centered-dialog">
+      <p>
+        First, you'll need to get a <span class="inline-image-latch">Latch</span> Application ID. Follow these steps:
+      </p>
+      <ol>
+        <li>Visit <a href="https://latch.elevenpaths.com/www/developers/register" target="blank">https://latch.elevenpaths.com/www/developers/register</a></li>
+      </ol>
+      <p>
+        Now, copy over some details.
+      </p>
+      <p>
+        <table>
+          <colgroup>
+            <col span="1" class="configuration_labels">
+            <col span="1" class="configuration_inputs">
+          </colgroup>
+            <tr>
+              <td>
+                <label for="configure-login-service-dialog-appId">Application ID</label>
+              </td>
+              <td>
+                <input id="configure-login-service-dialog-appId" type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="configure-login-service-dialog-secretKey">Application Secret</label>
+              </td>
+              <td>
+                <input id="configure-login-service-dialog-secretKey" type="text" />
+              </td>
+            </tr>
+        </table>
+      </p>
+      <div class="new-section">
+        <div class="login-button configure-login-service-dismiss-button">
+          I'll do this later
+        </div>
+        <a class="accounts-close configure-login-service-dismiss-button">&times;</a>
+        <div class="login-button login-button-configure {{#if saveDisabled}}login-button-disabled{{/if}}"
+             id="configure-login-service-dialog-save-configuration">
+          Save Configuration
+        </div>
+      </div>
+    </div>
+  {{/if}}
+</template>
+
+<template name="_latchConfigureButton">
+  {{#if visible}}
+  <div class="login-text-and-button">
+    <div class="login-button single-login-button configure-button" id="login-buttons-latch">
+      <div class="login-image" id="login-buttons-image-latch"></div>
+        <span class="text-besides-image configure-text-latch">Configure Latch</span>
+    </div>
+  </div>
+  {{/if}}
+</template>

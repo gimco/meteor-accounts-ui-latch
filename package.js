@@ -1,7 +1,7 @@
 Package.describe({
   name: 'gimco:accounts-ui-latch',
   summary: 'Latch integration for accounts-ui package',
-  version: '1.0.1',
+  version: '1.0.2',
   git: 'https://github.com/gimco/meteor-accounts-ui-latch'
 });
 
@@ -9,14 +9,14 @@ Package.onUse(function(api) {
   api.versionsFrom('1.0');
 
   api.use([
-    'gimco:latch@1.0.0',
     'accounts-ui-unstyled',
     'spacebars',
     'templating',
     'session',
     'tracker',
-    'service-configuration'
   ], 'client');
+
+  api.use(['gimco:latch@1.0.0', 'service-configuration']);
 
   api.addFiles([
     'utils.js',

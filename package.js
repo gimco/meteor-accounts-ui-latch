@@ -14,7 +14,8 @@ Package.onUse(function(api) {
     'spacebars',
     'templating',
     'session',
-    'tracker'
+    'tracker',
+    'service-configuration'
   ], 'client');
 
   api.addFiles([

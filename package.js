@@ -1,7 +1,7 @@
 Package.describe({
   name: 'gimco:accounts-ui-latch',
   summary: 'Latch integration for accounts-ui package',
-  version: '1.0.0',
+  version: '1.0.1',
   git: 'https://github.com/gimco/meteor-accounts-ui-latch'
 });
 

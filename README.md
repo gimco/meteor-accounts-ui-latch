@@ -6,4 +6,4 @@ A package that integrates the Latch service with Meteor framework, allowing user
 meteor add gimco:accounts-ui-latch
 ~~~~
 
-For more infomration take a look to the [`gimco:latch`](https://github.com/gimco/meteor-latch) package.
+For more information take a look to the [`gimco:latch`](https://github.com/gimco/meteor-latch) package.
